@@ -143,6 +143,26 @@ class PlacePickerState extends State<PlacePicker> {
       },
       child: Scaffold(
         appBar: AppBar(
+          leading: Container(
+            height: MediaQuery.of(context).size.height * 0.07,
+            width: MediaQuery.of(context).size.width * 0.12,
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              boxShadow: [
+                BoxShadow(
+                  color: Color(0xff707070).withOpacity(0.5),
+                  offset: Offset(0, 1),
+                  blurRadius: 2.0,
+                ),
+              ],
+              color: Color(0xffFFFFFE),
+            ),
+            child: Icon(
+              Icons.arrow_back,
+              color: Colors.black,
+              size: 22,
+            ),
+          ),
           key: this.appBarKey,
           title: SearchInput(searchPlace),
           centerTitle: true,
