@@ -144,11 +144,13 @@ class PlacePickerState extends State<PlacePicker> {
       child: Scaffold(
         appBar: AppBar(
           leading: InkWell(
-            onTap: ()=>Navigator.pop(context),
+            onTap: (){
+              Navigator.pop(context);
+              },
             child: Container(
               margin: EdgeInsets.all(8),
-              height: MediaQuery.of(context).size.height * 0.07,
-              width: MediaQuery.of(context).size.width * 0.12,
+              height: MediaQuery.of(context).size.height * 0.068,
+              width: MediaQuery.of(context).size.width * 0.1175,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 boxShadow: [
