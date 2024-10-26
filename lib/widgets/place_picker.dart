@@ -146,7 +146,7 @@ class PlacePickerState extends State<PlacePicker> {
           leading: InkWell(
             onTap: ()=>Navigator.pop(context),
             child: Container(
-              padding: EdgeInsets.all(8),
+              margin: EdgeInsets.all(8),
               height: MediaQuery.of(context).size.height * 0.07,
               width: MediaQuery.of(context).size.width * 0.12,
               decoration: BoxDecoration(
